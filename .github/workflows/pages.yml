@@ -1,0 +1,52 @@
+name: Update feeds and publish
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Restore the previous feed snapshot
+        uses: actions/cache/restore@v4
+        with:
+          path: site/data
+          key: feeds-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: feeds-v1-
+      - name: Collect public feeds and discussions
+        env:
+          X_ENABLED: ${{ vars.X_ENABLED }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_USERNAMES: ${{ vars.X_USERNAMES }}
+          X_FETCH_REPLIES: ${{ vars.X_FETCH_REPLIES }}
+        run: python3 scripts/collect.py --output site --limit 25
+      - name: Keep the snapshot for upstream outages
+        uses: actions/cache/save@v4
+        with:
+          path: site/data
+          key: feeds-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Publish GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

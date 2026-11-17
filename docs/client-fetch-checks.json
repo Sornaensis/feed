@@ -1,0 +1,508 @@
+{
+  "checkedAt": "2026-11-17T00:09:19.567Z",
+  "origin": "http://127.0.0.1:4173",
+  "results": [
+    {
+      "source": "ars",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 33
+    },
+    {
+      "source": "verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 59
+    },
+    {
+      "source": "dev",
+      "url": "https://dev.to/api/articles?per_page=2",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://dev.to/api/articles?per_page=2",
+      "bytes": 6068,
+      "items": 2,
+      "elapsedMs": 119
+    },
+    {
+      "source": "hn",
+      "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "bytes": 4501,
+      "items": 500,
+      "elapsedMs": 163
+    },
+    {
+      "source": "bbc",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 57
+    },
+    {
+      "source": "npr",
+      "url": "https://feeds.npr.org/1001/rss.xml",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 57
+    },
+    {
+      "source": "aljazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 60
+    },
+    {
+      "source": "guardian",
+      "url": "https://www.theguardian.com/world/rss",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 147
+    },
+    {
+      "source": "slashdot",
+      "url": "https://rss.slashdot.org/Slashdot/slashdotMain",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 255
+    },
+    {
+      "source": "dw",
+      "url": "https://rss.dw.com/rdf/rss-en-all",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://rss.dw.com/rdf/rss-en-all",
+      "bytes": 119314,
+      "items": 131,
+      "elapsedMs": 39
+    },
+    {
+      "source": "wired",
+      "url": "https://www.wired.com/feed/rss",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://www.wired.com/feed/rss",
+      "bytes": 44265,
+      "items": 50,
+      "elapsedMs": 33
+    },
+    {
+      "source": "propublica",
+      "url": "https://www.propublica.org/feeds/propublica/main",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 38
+    },
+    {
+      "source": "pbs",
+      "url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 89
+    },
+    {
+      "source": "media404",
+      "url": "https://www.404media.co/rss/",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 28
+    },
+    {
+      "source": "register",
+      "url": "https://www.theregister.com/headlines.atom",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 159
+    },
+    {
+      "source": "lobsters",
+      "url": "https://lobste.rs/hottest.json",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 47
+    },
+    {
+      "source": "sciencedaily",
+      "url": "https://www.sciencedaily.com/rss/top.xml",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 115
+    },
+    {
+      "source": "bluesky",
+      "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=arstechnica.com&limit=2",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=arstechnica.com&limit=2",
+      "bytes": 4436,
+      "items": 2,
+      "elapsedMs": 104
+    },
+    {
+      "source": "mastodon",
+      "url": "https://mastodon.social/api/v1/timelines/tag/technology?limit=2",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://mastodon.social/api/v1/timelines/tag/technology?limit=2",
+      "bytes": 7354,
+      "items": 2,
+      "elapsedMs": 242
+    },
+    {
+      "source": "techcrunch",
+      "url": "https://techcrunch.com/feed/",
+      "pass": false,
+      "error": "Failed to fetch",
+      "elapsedMs": 845
+    },
+    {
+      "source": "register-direct",
+      "url": "https://api.theregister.com/api/v1/article?orderBy=published&site_id=2&remapper=rss&content=node",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://api.theregister.com/api/v1/article?orderBy=published&site_id=2&remapper=rss&content=node",
+      "bytes": 330740,
+      "items": 50,
+      "elapsedMs": 612
+    },
+    {
+      "source": "bluesky-thread",
+      "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=at%3A%2F%2Fdid%3Aplc%3Awld6fad6xsm4tz4kfkoikun2%2Fapp.bsky.feed.post%2F3n2hmvtlmqd2c&depth=6&parentHeight=0",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=at%3A%2F%2Fdid%3Aplc%3Awld6fad6xsm4tz4kfkoikun2%2Fapp.bsky.feed.post%2F3n2hmvtlmqd2c&depth=6&parentHeight=0",
+      "bytes": 18398,
+      "items": 1,
+      "elapsedMs": 85
+    },
+    {
+      "source": "mastodon-status",
+      "url": "https://mastodon.social/api/v1/statuses/117628870295634585",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://mastodon.social/api/v1/statuses/117628870295634585",
+      "bytes": 3665,
+      "items": 1,
+      "elapsedMs": 213
+    },
+    {
+      "source": "mastodon-thread",
+      "url": "https://mastodon.social/api/v1/statuses/117628870295634585/context",
+      "pass": true,
+      "status": 200,
+      "finalUrl": "https://mastodon.social/api/v1/statuses/117628870295634585/context",
+      "bytes": 33,
+      "items": 0,
+      "elapsedMs": 193
+    }
+  ],
+  "method": "Standard fetch in Chrome, mode cors, credentials omit, no extra headers or proxy; response body parsed as XML or JSON. Origin was the local managed preview. Separate GET probes sent Origin https://example.github.io.",
+  "headerChecks": {
+    "checkedAt": "2026-11-17T00:07:07.511667+00:00",
+    "method": "One unauthenticated GET per configured endpoint with a GitHub Pages-shaped Origin; supporting header evidence only, not a browser CORS test.",
+    "results": [
+      {
+        "sourceId": "ars",
+        "requestedUrl": "https://feeds.arstechnica.com/arstechnica/index",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://feeds.arstechnica.com/arstechnica/index",
+        "contentType": "application/rss+xml; charset=UTF-8",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": null,
+        "bytesRead": 72862,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 12.64
+      },
+      {
+        "sourceId": "verge",
+        "requestedUrl": "https://www.theverge.com/rss/index.xml",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://www.theverge.com/rss/index.xml",
+        "contentType": "application/xml; charset=UTF-8",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": "Accept-Encoding, x-user-state, x-user-state",
+        "bytesRead": 45838,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 4.16
+      },
+      {
+        "sourceId": "techcrunch",
+        "requestedUrl": "https://techcrunch.com/feed/",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://techcrunch.com/feed/",
+        "contentType": "application/rss+xml; charset=UTF-8",
+        "allowOrigin": "https://techcrunch.com",
+        "allowCredentials": null,
+        "vary": "Accept-Encoding, Origin",
+        "bytesRead": 17692,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 5.06
+      },
+      {
+        "sourceId": "slashdot",
+        "requestedUrl": "https://rss.slashdot.org/Slashdot/slashdotMain",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://rss.slashdot.org/Slashdot/slashdotMain",
+        "contentType": "text/xml",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": "accept-encoding",
+        "bytesRead": 65185,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 4.6
+      },
+      {
+        "sourceId": "bbc",
+        "requestedUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "contentType": "text/xml; charset=utf-8",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": "Accept-Encoding",
+        "bytesRead": 16580,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 5.94
+      },
+      {
+        "sourceId": "guardian",
+        "requestedUrl": "https://www.theguardian.com/world/rss",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://www.theguardian.com/world/rss",
+        "contentType": "text/xml; charset=UTF-8",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": "Accept-Encoding,User-Agent",
+        "bytesRead": 158922,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 5.79
+      },
+      {
+        "sourceId": "npr",
+        "requestedUrl": "https://feeds.npr.org/1001/rss.xml",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://feeds.npr.org/1001/rss.xml",
+        "contentType": "text/xml;charset=UTF-8",
+        "allowOrigin": "https://apps.npr.org",
+        "allowCredentials": null,
+        "vary": "Accept-Encoding",
+        "bytesRead": 14739,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 5.35
+      },
+      {
+        "sourceId": "aljazeera",
+        "requestedUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+        "contentType": "application/rss+xml; charset=UTF-8",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": "Accept-Encoding",
+        "bytesRead": 17022,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 4.22
+      },
+      {
+        "sourceId": "dw",
+        "requestedUrl": "https://rss.dw.com/rdf/rss-en-all",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://rss.dw.com/rdf/rss-en-all",
+        "contentType": "text/xml; charset=UTF-8",
+        "allowOrigin": "*",
+        "allowCredentials": null,
+        "vary": "Accept-Encoding",
+        "bytesRead": 119314,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 4.38
+      },
+      {
+        "sourceId": "register",
+        "requestedUrl": "https://www.theregister.com/headlines.atom",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://api.theregister.com/api/v1/article?orderBy=published&site_id=2&remapper=rss&content=node",
+        "contentType": "application/xml",
+        "allowOrigin": "*",
+        "allowCredentials": null,
+        "vary": "Accept-Encoding",
+        "bytesRead": 262144,
+        "bodyMayBeTruncated": true,
+        "redirects": [
+          {
+            "status": 302,
+            "url": "https://api.theregister.com/api/v1/article?orderBy=published&site_id=2&remapper=rss&content=node"
+          }
+        ],
+        "elapsedSeconds": 7.48
+      },
+      {
+        "sourceId": "wired",
+        "requestedUrl": "https://www.wired.com/feed/rss",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://www.wired.com/feed/rss",
+        "contentType": "application/xml",
+        "allowOrigin": "*",
+        "allowCredentials": null,
+        "vary": "accept-encoding",
+        "bytesRead": 44265,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 5.58
+      },
+      {
+        "sourceId": "pbs",
+        "requestedUrl": "https://www.pbs.org/newshour/feeds/rss/headlines",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://www.pbs.org/newshour/feeds/rss/headlines",
+        "contentType": "application/rss+xml; charset=UTF-8",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": "Accept-Encoding,Accept-Encoding",
+        "bytesRead": 35507,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 3.38
+      },
+      {
+        "sourceId": "propublica",
+        "requestedUrl": "https://www.propublica.org/feeds/propublica/main",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://www.propublica.org/feeds/propublica/main",
+        "contentType": "application/xml; charset=UTF-8",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": "Accept-Encoding",
+        "bytesRead": 262144,
+        "bodyMayBeTruncated": true,
+        "redirects": [],
+        "elapsedSeconds": 6.2
+      },
+      {
+        "sourceId": "sciencedaily",
+        "requestedUrl": "https://www.sciencedaily.com/rss/top.xml",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://www.sciencedaily.com/rss/top.xml",
+        "contentType": "application/xml",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": null,
+        "bytesRead": 46748,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 5.83
+      },
+      {
+        "sourceId": "media404",
+        "requestedUrl": "https://www.404media.co/rss/",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://www.404media.co/rss/",
+        "contentType": "application/rss+xml; charset=utf-8",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": "Cookie, Accept-Encoding",
+        "bytesRead": 126463,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 7.23
+      },
+      {
+        "sourceId": "lobsters",
+        "requestedUrl": "https://lobste.rs/hottest.json",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://lobste.rs/hottest.json",
+        "contentType": "application/json",
+        "allowOrigin": null,
+        "allowCredentials": null,
+        "vary": "Accept-Encoding",
+        "bytesRead": 13342,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 4.71
+      },
+      {
+        "sourceId": "bluesky",
+        "requestedUrl": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=arstechnica.com&limit=2",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=arstechnica.com&limit=2",
+        "contentType": "application/json; charset=utf-8",
+        "allowOrigin": "*",
+        "allowCredentials": null,
+        "vary": "Accept-Encoding",
+        "bytesRead": 4436,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 3.78
+      },
+      {
+        "sourceId": "mastodon",
+        "requestedUrl": "https://mastodon.social/api/v1/timelines/tag/technology?limit=2",
+        "origin": "https://example.github.io",
+        "status": 200,
+        "finalUrl": "https://mastodon.social/api/v1/timelines/tag/technology?limit=2",
+        "contentType": "application/json; charset=utf-8",
+        "allowOrigin": "*",
+        "allowCredentials": null,
+        "vary": "Authorization, Accept, X-Requested-With, Origin, Accept-Encoding",
+        "bytesRead": 7788,
+        "bodyMayBeTruncated": false,
+        "redirects": [],
+        "elapsedSeconds": 3.7
+      }
+    ]
+  },
+  "parserParity": [
+    {
+      "source": "dw",
+      "posts": 3,
+      "pass": true
+    },
+    {
+      "source": "wired",
+      "posts": 3,
+      "pass": true
+    },
+    {
+      "source": "register",
+      "posts": 3,
+      "pass": true
+    },
+    {
+      "source": "wired",
+      "posts": 1,
+      "pass": true
+    }
+  ]
+}

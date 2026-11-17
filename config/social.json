@@ -1,0 +1,9 @@
+{
+  "bluesky": {
+    "actors": ["arstechnica.com", "theverge.com", "apnews.com"]
+  },
+  "mastodon": {
+    "instance": "https://mastodon.social",
+    "tag": "technology"
+  }
+}

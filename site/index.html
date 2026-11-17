@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f6">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: http: data:; media-src 'self' https: http: blob:; connect-src 'self' https:; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src https://www.youtube-nocookie.com https://player.vimeo.com">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="The Feed — Technology News Aggregator. Science, technology, Linux, gaming and news in one reader, with inline previews and conversations.">
+    <title>The Feed — Technology News Aggregator</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="./assets/styles.css?v=5">
+    <script type="module" src="./assets/app.js?v=7"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#stories">Skip to stories</a>
+    <main id="main" class="main" tabindex="-1">
+      <header class="page-header">
+        <div class="heading-row">
+          <h1><a class="brand" href="./"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M7 7a18 18 0 0 1 18 18M7 15a10 10 0 0 1 10 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="7" cy="25" r="2" fill="currentColor"/></svg>The Feed</a></h1>
+          <time id="editionDate"></time>
+        </div>
+        <p class="page-description">Technology News Aggregator</p>
+        <div class="navigation-row">
+          <nav class="view-navigation" aria-label="Views">
+            <button class="nav-button active" type="button" data-view="all" aria-pressed="true">All stories <span class="nav-count" id="allCount"></span></button>
+            <button class="nav-button" type="button" data-view="saved" aria-pressed="false">Saved <span class="nav-count" id="savedCount"></span></button>
+          </nav>
+          <div class="header-actions">
+            <button id="refreshButton" class="text-button" type="button" aria-label="Refresh feeds" title="Refresh feeds">Refresh</button>
+            <button id="themeButton" class="text-button" type="button" aria-label="Toggle light or dark theme">Theme</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="reader-layout">
+        <div class="reading-column">
+          <div class="feed-toolbar" role="search" aria-label="Filter your feed">
+            <div class="search-field">
+              <label class="sr-only" for="searchInput">Search stories, sources, or authors</label>
+              <input id="searchInput" type="search" placeholder="Search stories, sources, or authors…" autocomplete="off" spellcheck="false">
+              <kbd id="searchShortcut" aria-hidden="true">/</kbd>
+              <button id="clearSearchButton" type="button" aria-label="Clear search" hidden></button>
+            </div>
+            <div class="toolbar-options">
+              <label class="unread-toggle" for="unreadOnly"><input id="unreadOnly" type="checkbox"> Unread only</label>
+              <label class="sr-only" for="sortSelect">Sort stories</label>
+              <select id="sortSelect"><option value="balanced">Balanced mix</option><option value="newest">Newest first</option><option value="discussed">Most discussed</option></select>
+            </div>
+          </div>
+
+          <div id="topicFilters" class="topic-filters" role="group" aria-label="Filter by topic"></div>
+
+          <div class="feed-context">
+            <p id="feedStatus" class="feed-summary" role="status" aria-live="polite">Loading feeds…</p>
+            <button id="filterReset" class="text-button" type="button" hidden>Clear filters</button>
+          </div>
+          <div id="errorBanner" class="error-banner" role="alert" hidden></div>
+
+          <section id="stories" aria-label="Stories" tabindex="-1">
+            <div id="feedList" class="feed-list" aria-busy="true">
+              <p class="loading-note">Loading stories…</p>
+            </div>
+            <div id="emptyState" class="empty-state" hidden><h2>No stories in this view.</h2><p>Try another date or search.</p></div>
+            <div class="load-more-wrap"><button id="loadMoreButton" class="text-button load-more" type="button" hidden>More stories</button></div>
+          </section>
+
+          <footer class="feed-footer"><p>Read here. Reply at the source.</p><a href="#main">Back to top</a></footer>
+        </div>
+
+        <aside class="calendar-sidebar" aria-labelledby="archiveHeading">
+          <details id="calendarWidget" open>
+            <summary>
+              <h2 id="archiveHeading">Archive</h2>
+              <span class="calendar-disclosure" aria-hidden="true">Browse dates <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m7 10 5 5 5-5"/></svg></span>
+            </summary>
+            <div class="calendar-body">
+              <div class="calendar-month-navigation">
+                <button id="calendarPrev" class="calendar-nav" type="button" aria-label="Previous month"><span aria-hidden="true">‹</span></button>
+                <h3 id="calendarMonth" aria-live="polite">Calendar</h3>
+                <button id="calendarNext" class="calendar-nav" type="button" aria-label="Next month"><span aria-hidden="true">›</span></button>
+              </div>
+              <table class="calendar-table" aria-labelledby="calendarMonth">
+                <caption class="sr-only">Choose a publication date</caption>
+                <thead><tr>
+                  <th scope="col"><abbr title="Monday">M</abbr></th>
+                  <th scope="col"><abbr title="Tuesday">T</abbr></th>
+                  <th scope="col"><abbr title="Wednesday">W</abbr></th>
+                  <th scope="col"><abbr title="Thursday">T</abbr></th>
+                  <th scope="col"><abbr title="Friday">F</abbr></th>
+                  <th scope="col"><abbr title="Saturday">S</abbr></th>
+                  <th scope="col"><abbr title="Sunday">S</abbr></th>
+                </tr></thead>
+                <tbody id="calendarDays"></tbody>
+              </table>
+            </div>
+          </details>
+          <p id="calendarSelection" class="calendar-selection" hidden></p>
+          <button id="clearDateButton" class="text-button calendar-clear" type="button" hidden>All dates</button>
+          <div class="archive-feedback">
+            <p id="archiveNote" class="archive-note" hidden></p>
+            <button id="retryArchiveButton" class="text-button" type="button" hidden>Retry archive</button>
+          </div>
+        </aside>
+      </div>
+      <noscript><p class="error-banner">Enable JavaScript to combine feeds and read discussions.</p></noscript>
+    </main>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>
